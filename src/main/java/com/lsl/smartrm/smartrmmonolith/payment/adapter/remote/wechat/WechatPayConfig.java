@@ -13,7 +13,7 @@ import java.io.InputStream;
  * @author: yoda
  * @description: 微信支付配置
  */
-@Configuration
+//@Configuration
 public abstract class WechatPayConfig extends WXPayConfig {
 
   @Value("${wechat.pay.appId}")

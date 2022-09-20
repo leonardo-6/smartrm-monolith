@@ -28,7 +28,7 @@ public class WxPaymentClientImpl implements PaymentPlatformClient {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(WxPaymentClientImpl.class);
 
-  @Autowired
+  @Autowired(required = false)
   private WXPayConfig wxPayConfig;
 
   @Value("${wechat.pay.notifyUrl}")

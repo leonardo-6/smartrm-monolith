@@ -8,16 +8,21 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
 
-/*****
- * @author lsl
- */
-@SpringBootApplication(scanBasePackages = "com.smartrm.smartrmmonolith")
-@MapperScan({"com.smartrm.smartrmmonolith.device.infrastructure.mapper",
-		"com.smartrm.smartrmmonolith.user.infrastructure.mapper",
-		"com.smartrm.smartrmmonolith.payment.infrastructure.mapper",
-		"com.smartrm.smartrmmonolith.trade.infrastructure.mapper",
-		"com.smartrm.smartrmmonolith.infracore.idgenerator.impl.mapper",
-		"com.smartrm.smartrmmonolith.operation.infrastructure.mapper"})
+/**
+* boot的启动类
+* @Description: 启动类
+* @Author: LSL
+* @Date: 2022/9/20 10:04
+* @ProjectName: com.lsl.smartrm.smartrmmonolith
+* @FileName: SmartRmMonolithApplication.java
+*/
+@SpringBootApplication(scanBasePackages = "com.lsl.smartrm.smartrmmonolith")
+@MapperScan({"com.lsl.smartrm.smartrmmonolith.device.infrastructure.mapper",
+		"com.lsl.smartrm.smartrmmonolith.user.infrastructure.mapper",
+		"com.lsl.smartrm.smartrmmonolith.payment.infrastructure.mapper",
+		"com.lsl.smartrm.smartrmmonolith.trade.infrastructure.mapper",
+		"com.lsl.smartrm.smartrmmonolith.infracore.idgenerator.impl.mapper",
+		"com.lsl.smartrm.smartrmmonolith.operation.infrastructure.mapper"})
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableAutoConfiguration(exclude = {SecurityAutoConfiguration.class})
 public class SmartRmMonolithApplication {

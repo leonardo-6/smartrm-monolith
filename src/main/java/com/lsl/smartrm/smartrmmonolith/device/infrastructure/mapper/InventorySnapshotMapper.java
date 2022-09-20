@@ -21,7 +21,7 @@ public interface InventorySnapshotMapper {
   @Delete({"delete from inventory_snapshot where machine_id=#{machineId}"})
   int deleteByMachineId(Long machineId);
 
-  int insertBatch(@Param("list") List<VendingMachineInventoryDo> inventoryDos);
+  int insertBatch(@Param("list")List<VendingMachineInventoryDo> inventoryDos);
 
 }
 

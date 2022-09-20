@@ -7,6 +7,7 @@ import com.lsl.smartrm.smartrmmonolith.payment.application.remote.PaymentPlatfor
 import com.lsl.smartrm.smartrmmonolith.payment.application.service.PayService;
 import com.lsl.smartrm.smartrmmonolith.payment.domain.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
  * @description:
  */
 @Component
+@Primary
 public class MockPaymentPlatformClientImpl implements PaymentPlatformClient {
 
   @Autowired

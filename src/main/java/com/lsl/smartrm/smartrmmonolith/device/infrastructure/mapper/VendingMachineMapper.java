@@ -22,7 +22,7 @@ public interface VendingMachineMapper {
       @Param("deviceName") String deviceName);
 
   @Update({
-      "update vending_machine set `state`=#{state} where machine_id=#{machineId}"})
+      "update vending_machine set `cabinet_door_state`=#{cabinetDoorState} where machine_id=#{machineId}"})
   int update(VendingMachineDo vendingMachineDo);
 
 }

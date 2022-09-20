@@ -15,6 +15,9 @@ spring:
     #    driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
+  main:
+    # 打开高版本默认不支持的循环依赖
+    allow-circular-references: true
   quartz:
     #相关属性配置
     properties:
